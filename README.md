@@ -8,16 +8,18 @@ Minimal and efficient logger library for the JVM
 #Why performance of logging is so important ? 
 
 By definition a logging library aims at offering a way to track execution step of a software, for debuggin, or simply to track execution history.
-Logging library is intensively used in Java program without regarding the impormance impact.
-As a result, logging activity can take 20 or 30% percent of execution of a Java program, simply because the IF to decide or not to print the message cost by itself a call or  create a message String object garbaged immeditely.
+Logging library is intensively used in Java program without regarding the performance impact.
+Logging activity can take up to 20 or 30% percent of the total execution time of a Java program.
+This, because the IF statement to decide or not to print the message, cost by itself a method call or create a message String object which will be garbaged immeditely.
 
-Martin Fowler in it's blog [Fowler Blog](http://martinfowler.com/articles/dipInTheWild.html) already speak about this issue.
-For example using an common SLF4J API can perform 70 method call befor printing a simple message. 
+Martin Fowler in it's blog [Fowler Blog](http://martinfowler.com/articles/dipInTheWild.html) already speaks about this problem.
+For example using an common SLF4J API can perform 70 method calls befor printing a simple message on the output stream.
+Using a Logback backend make this stack call even deeper.
 
-We believe that standard is important , and API like SLF4J is very important for production usage of code. However in many case we don't can to paid so much (for example in Android application) because log performance has direct impact on user experience. 
+We believe that standard is important, and API like SLF4J is very important for production usage of code. 
+However in many case, we aren't ready paid so this price (for example in Android application) because log performance has direct impact on user experience. 
 
-This very death simple library aims at offering a generic way to perfom clean log without a full overhead of a standard API like SLF4J.
-
+This very death (to ?) simple library aims at offering a generic way to perfom log with a few overhead and ability to remove debug log at compile like any C++ application.
 
 # Last version : 1
 
