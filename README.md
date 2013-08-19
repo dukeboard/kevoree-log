@@ -30,7 +30,7 @@ Simply include the dependency from Maven repository as
         <dependency>
             <groupId>org.kevoree.log</groupId>
             <artifactId>org.kevoree.log</artifactId>
-            <version>${project.version}</version>
+            <version>REPLACE_LOG_VERSION</version>
         </dependency>
         
 Then you can directly use it in your Java code :
@@ -53,7 +53,7 @@ Can to seamless migrate from SLF4J , just include our compatibility layer withou
         <dependency>
             <groupId>org.kevoree.log</groupId>
             <artifactId>org.kevoree.log.compat.slf4j</artifactId>
-            <version>${project.version}</version>
+            <version>REPLACE_LOG_VERSION</version>
         </dependency>
         
 Don't hesite to give us any feedback, or new idea to improve this API.
