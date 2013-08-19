@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/org.kevoree.log/org.kevoree.log.iml" filepath="$PROJECT_DIR$/org.kevoree.log/org.kevoree.log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.kevoree.log.compat.slf4j/org.kevoree.log.compat.slf4j.iml" filepath="$PROJECT_DIR$/org.kevoree.log.compat.slf4j/org.kevoree.log.compat.slf4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.kevoree.log.root.iml" filepath="$PROJECT_DIR$/org.kevoree.log.root.iml" />
+    </modules>
+  </component>
+</project>
+
