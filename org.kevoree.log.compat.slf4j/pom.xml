@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.kevoree.log.compat.slf4j</artifactId>
     <name>Kevoree :: Log :: Compat :: SLF4J</name>
-    <version>1</version>
+    <version>2-SNAPSHOT</version>
 	
     <parent>
         <artifactId>org.kevoree.log.root</artifactId>
         <groupId>org.kevoree.log</groupId>
-        <version>1</version>
+        <version>2-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
