@@ -3,9 +3,9 @@ kevoree-log
 
 Minimal and efficient logger library for the JVM
 
-##The project aims at offering a very low overhead log library for intensive usage inside a JVM.
+####This project aims at offering a very low overhead log library for intensive usage inside a JVM.
 
-#Why performance of logging is so important ? 
+##Why performance of logging is so important ? 
 
 By definition a logging library aims at offering a way to track execution step of a software, for debuggin, or simply to track execution history.
 Logging library is intensively used in Java program without regarding the performance impact.
