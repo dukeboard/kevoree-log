@@ -17,3 +17,30 @@ For example using an common SLF4J API can perform 70 method call befor printing 
 We believe that standard is important , and API like SLF4J is very important for production usage of code. However in many case we don't can to paid so much (for example in Android application) because log performance has direct impact on user experience. 
 
 This very death simple library aims at offering a generic way to perfom clean log without a full overhead of a standard API like SLF4J.
+
+
+# Last version : 1
+
+# How to use it : 
+
+Simply include the dependency from Maven repository as
+
+        <dependency>
+            <groupId>org.kevoree.log</groupId>
+            <artifactId>org.kevoree.log</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+Then you can directly use it in your Java code :
+
+    org.kevoree.Log.info("My important message");
+    
+or
+
+    static import org.kevoree.Log;
+    info("My important Message");
+    
+In addition you can use SLF4J lazy string formatting strategy (up to 5 arguments only) :
+
+    info("Hello {} from {}",obj1,obj2);
+
