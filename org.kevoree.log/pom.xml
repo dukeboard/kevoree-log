@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.kevoree.log</artifactId>
     <name>Kevoree :: Log</name>
-    <version>1-SNAPSHOT</version>
+    <version>1</version>
 
     <parent>
         <artifactId>org.kevoree.log.root</artifactId>
         <groupId>org.kevoree.log</groupId>
-        <version>1-SNAPSHOT</version>
+        <version>1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
