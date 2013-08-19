@@ -44,3 +44,13 @@ In addition you can use SLF4J lazy string formatting strategy (up to 5 arguments
 
     info("Hello {} from {}",obj1,obj2);
 
+If you can to seamless migrate from SLF4J , just include our compatibility layer without depend on SLF4J API (which is included).
+
+        <dependency>
+            <groupId>org.kevoree.log</groupId>
+            <artifactId>org.kevoree.log.compat.slf4j</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+That all, don't hesite to give us any feedback, or new idea to improve this API.
+
