@@ -5,7 +5,7 @@ Minimal and efficient logger library for the JVM
 
 ####This project aims at offering a very low overhead log library for intensive usage inside a JVM.
 
-##Why performance of logging is so important ? 
+###Why performance of logging is so important ? 
 
 By definition a logging library aims at offering a way to track execution step of a software, for debuggin, or simply to track execution history.
 Logging library is intensively used in Java program without regarding the performance impact.
@@ -21,9 +21,9 @@ However in many case, we aren't ready paid so this price (for example in Android
 
 This very death (to ?) simple library aims at offering a generic way to perfom log with a few overhead and ability to remove debug log at compile like any C++ application.
 
-# Last version : 1
+## Last version : 1
 
-# How to use it : 
+## How to use it : 
 
 Simply include the dependency from Maven repository as
 
@@ -46,7 +46,9 @@ In addition you can use SLF4J lazy string formatting strategy (up to 5 arguments
 
     info("Hello {} from {}",obj1,obj2);
 
-If you can to seamless migrate from SLF4J , just include our compatibility layer without depend on SLF4J API (which is included).
+##If you already use SLF4J API?
+
+Can to seamless migrate from SLF4J , just include our compatibility layer without depend on SLF4J API (which is included).
 
         <dependency>
             <groupId>org.kevoree.log</groupId>
@@ -54,5 +56,5 @@ If you can to seamless migrate from SLF4J , just include our compatibility layer
             <version>${project.version}</version>
         </dependency>
         
-That all, don't hesite to give us any feedback, or new idea to improve this API.
+Don't hesite to give us any feedback, or new idea to improve this API.
 
