@@ -42,7 +42,7 @@ or
     static import org.kevoree.Log;
     info("My important Message");
     
-In addition you can use SLF4J lazy string formatting strategy (up to 5 arguments only) :
+In addition you can use SLF4J lazy string formatting strategy (up to 5 arguments max) :
 
     info("Hello {} from {}",obj1,obj2);
 
