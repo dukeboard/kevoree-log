@@ -6,7 +6,7 @@
     <version>2-SNAPSHOT</version>
     <name>Kevoree :: Log :: Root</name>
     <url>https://github.com/dukeboard/kevoree-log</url>
-    <description>Kevoree Log Library</description>
+    <description>Kevoree Log Framework</description>
 
     <dependencies>
         <dependency>
