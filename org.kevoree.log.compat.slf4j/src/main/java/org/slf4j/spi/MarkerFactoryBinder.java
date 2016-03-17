@@ -30,7 +30,7 @@ import org.slf4j.IMarkerFactory;
 
 
 /**
- * An internal interface which helps the static {@link org.slf4j.MarkerFactory} 
+ * An internal interface which helps the static {@link org.slf4j.IMarkerFactory}
  * class bind with the appropriate {@link org.slf4j.IMarkerFactory} instance.
  *
  * @author Ceki G&uuml;lc&uuml;
@@ -39,10 +39,10 @@ public interface MarkerFactoryBinder {
 
   /**
    * Return the instance of {@link org.slf4j.IMarkerFactory} that
-   * {@link org.slf4j.MarkerFactory} class should bind to.
+   * {@link org.slf4j.IMarkerFactory} class should bind to.
    *
    * @return the instance of {@link org.slf4j.IMarkerFactory} that
-   * {@link org.slf4j.MarkerFactory} class should bind to.
+   * {@link org.slf4j.IMarkerFactory} class should bind to.
    */
   public IMarkerFactory getMarkerFactory();
 
