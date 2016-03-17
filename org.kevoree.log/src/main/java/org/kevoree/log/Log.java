@@ -2,9 +2,9 @@
  * Licensed under the GNU LESSER GENERAL PUBLIC LICENSE, Version 3, 29 June 2007;
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
+ * <p>
  * http://www.gnu.org/licenses/lgpl-3.0.txt
- *
+ * <p>
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -628,7 +628,11 @@ public class Log {
                 builder.append('\n');
                 builder.append(writer.toString().trim());
             }
-            print(builder.toString());
+            if (level == LEVEL_ERROR) {
+                printErr(builder.toString());
+            } else {
+                print(builder.toString());
+            }
         }
 
         /**
@@ -636,6 +640,13 @@ public class Log {
          */
         protected void print(String message) {
             System.out.println(message);
+        }
+
+        /**
+         * Prints the message to System.err. Called by the default implementation of {@link #log(int, String, Throwable)}.
+         */
+        protected void printErr(String message) {
+            System.err.println(message);
         }
     }
 }
