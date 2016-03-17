@@ -3,7 +3,7 @@
     <groupId>org.kevoree.log</groupId>
     <artifactId>org.kevoree.log.root</artifactId>
     <packaging>pom</packaging>
-    <version>2</version>
+    <version>3-SNAPSHOT</version>
     <name>Kevoree :: Log :: Root</name>
     <url>https://github.com/dukeboard/kevoree-log</url>
     <description>Kevoree Log Framework</description>
